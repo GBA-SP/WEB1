@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <h1><span style ="font-weight: 100;">자바스크립트란?</span></h1>
     </head>
+
+<style>
+    span
+    {
+        color :seagreen
+    }
+    #Number1
+    {
+        color :red;
+    }
+    .SpanClass
+    {
+        color:blue;
+    }
+</style>
+
     <body>
-        
+        <span class ="SpanClass" id="Number1">무형 태그1</span>
+        <span class ="SpanClass">무형 태그2</span>
+        <span class ="SpanClass">무형 태그3</span>
+        <span >무형 태그4</span>
+
+
+        <input 
+        type ="button" 
+        id = "ListButton"
+        value = "ListButton"
+        onclick="
+        var list = document.querySelectorAll('#Number1');
+        for(var i = 0; i<list.length; ++i)
+        {
+            document.write(list[i].localName);
+        }
+        ">
     </body>
 </html>

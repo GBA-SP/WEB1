@@ -9,16 +9,35 @@
     </head>
 
     <body>
-
-        <input type = "button" value ="hi" onclick="alert('!')">
+        
         <script>
+        var list1 = document.querySelector('#list1');
+        var Number =5;
+        var HTML_String ="<html>4</html>"
         </script>
-        <h1>WEB이란?</h1>
-        <ol>
+        <h1 style="color:powderblue;
+        background-color:seagreen;" >
+            WEB이란?
+        </h1>
+        
+        <ol id = "list1">
             <li><a href ="htmlDescription.html" title ="Html설명탭">HTML</a></li>
             <li><a href ="CSS_Description.html">CSS</a></li>
             <li><a href ="JavaScriptDescription.html" target="Html설명탭"> 자바스크립트</a></li>
         </ol>
+        설명글
+        <input type = "button" 
+        value ="Light" 
+        onclick=
+        "document.querySelector('body').style.backgroundColor ='white';
+        document.querySelector('body').style.color='black';
+        document.write(HTML_String);
+        //list1.style.color ='red';
+        ">
+        <input type = "button" 
+        value ="Dark" 
+        onclick="document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';">
     </body>
 
 

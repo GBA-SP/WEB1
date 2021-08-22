@@ -1,0 +1,42 @@
+<html>
+    <body>
+    <input 
+    type= "button" 
+    id="ThemeButton"
+    value="White"
+    
+    onclick="
+    var button = document.querySelector('#ThemeButton');
+    if(button.value === 'White')
+    {
+        this.value = 'Dark';
+    }
+    else
+    {
+        document.querySelector('#ThemeButton').value = 'White';
+        
+    }
+    ">
+<body>
+    <input 
+    type= "button" 
+    id="ThemeButton2"
+    value="White"
+    
+    onclick="
+    var button = document.querySelector('#ThemeButton');
+    if(button.value === 'White')
+    {
+        button.value = 'Dark';
+    }
+    else
+    {
+        this.value = 'White';
+        
+    }
+    ">    
+
+</body>
+
+
+</html>
